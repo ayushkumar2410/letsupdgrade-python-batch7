@@ -1,0 +1,8 @@
+for Number in range (1, 101):
+    counting = 0
+    for i in range(2, (Number//2 + 1)):
+        if(Number % i == 0):
+            counting = counting + 1
+
+    if (counting == 0 and Number != 1):
+        print(" %d" %Number, end = '  ')
